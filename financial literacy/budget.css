@@ -1,0 +1,199 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fb;
+}
+
+
+.main-header {
+  background-color: #0056b3;
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li a.active::after {
+  width: 100%;
+}
+
+/* ===== Budget Container ===== */
+.budget-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.budget-container h2 {
+  text-align: center;
+  color: #0056b3;
+}
+
+.budget-container p {
+  text-align: center;
+  color: #555;
+}
+
+/* ===== Input Section ===== */
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.input-section input,
+.input-section select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 180px;
+}
+
+.input-section button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-section button:hover {
+  background-color: #003d82;
+}
+
+/* ===== Table ===== */
+#budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#budget-table th,
+#budget-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#budget-table th {
+  background-color: #0056b3;
+  color: white;
+}
+
+td.income {
+  color: green;
+  font-weight: bold;
+}
+
+td.expense {
+  color: red;
+  font-weight: bold;
+}
+
+/* ===== Result Section ===== */
+.result-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#calculate-btn,
+#reset-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+#calculate-btn:hover,
+#reset-btn:hover {
+  background-color: #0056b3;
+}
+
+#total-display {
+  margin-top: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #0056b3; /* Blue footer */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-section input,
+  .input-section select {
+    width: 90%;
+  }
+}

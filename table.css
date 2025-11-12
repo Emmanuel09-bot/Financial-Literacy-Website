@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(17, 16, 16);
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(0, 2%, 12%); */
+    width: 90%;
+}
+
+.run {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.second {
+    width: 100%;
+}
+.progress {
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    height: 0px;
+    background-color: hsl(0, 0%, 0%);
+    border-radius: 50px;
+}
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(to right, hsl(135, 84%, 35%));
+    margin-top: 1px;
+    border-radius: 50px;
+}
+p {
+    color: white;
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+.rat {
+    margin-bottom: 50px;
+}
+.fast {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-left: -25px;
+}
+.den {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.ben {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.red {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.hen {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.fat {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 40px;
+    width: 600px;
+    height: 165px;
+    border-radius: 10px;
+}
+
+.tag {
+  
+    display: flex;
+    flex-direction: column;
+}
+.bro {
+    margin-left: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: aqua;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+   
+}
+.bro:hover {
+    background-color: rgb(31, 30, 30);
+    color: black;
+    cursor: pointer;
+    transition: ease .5s, ease-out .5s;
+    transform: translateY(-4px);
+}
+.tad {
+    margin-left: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: aqua;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+}
+.tad:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: ease .5s, ease-out .5s;
+    transform: translateY(-4px);
+}
+.hat {
+    margin-left: 20px;
+    margin-top: 1px;
+    text-decoration: none;
+    color: aqua;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+}
+.hat:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: ease .5s, ease-out .5s;
+    transform: translateY(-4px);
+}
+.dem {
+    margin-left: 15px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: aqua;
+    padding: 10px 30px;
+    border-radius: 10px;
+
+}
+.dem:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: ease .5s, ease-out .5s;
+    transform: translateY(-4px);
+}
+.you {
+    color: rgb(192, 188, 183);
+    margin-right: 30px;
+    margin-top: -20px;
+}
+.van {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 40px;
+    width: 600px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-right: 40px;
+    margin-top: 12px;
+}
+.dac {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between ;
+    align-items: center;
+    margin-top: 0px;
+}
+.got {
+    margin-top: 10px;
+    font-size: 20px;
+}

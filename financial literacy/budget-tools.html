@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Tools | Financial Literacy</title>
+  <link rel="stylesheet" href="budget.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <h1 class="logo">Financial Literacy</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="budget-tools.html" class="active">Budget Tools</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Budget Tool Section -->
+  <main class="budget-container">
+    <h2>Personal Budget Calculator</h2>
+    <p>Track your income and expenses below, then calculate your total balance instantly.</p>
+
+    <div class="input-section">
+      <input type="text" id="description" placeholder="Description (e.g. Salary, Rent)" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button id="add-btn">Add</button>
+    </div>
+
+    <table id="budget-table">
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="result-section">
+      <button id="calculate-btn">Calculate Total</button>
+      <button id="reset-btn">Reset All</button>
+      <h3 id="total-display">Total Balance: ₦0</h3>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Financial Literacy. All rights reserved.</p>
+  </footer>
+
+  <script src="budget.js"></script>
+</body>
+</html>
